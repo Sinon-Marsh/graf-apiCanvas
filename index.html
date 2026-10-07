@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2.2 - API Canvas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f4f4f9;
+        }
+        canvas {
+            border: 2px solid #333;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .controls {
+            margin-top: 15px;
+        }
+        button {
+            padding: 8px 12px;
+            margin: 0 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body onload="drawRect()">
+
+    <h1>Práctica 2.2: Introducción a la Graficación 2D</h1>
+    <canvas id="canvas" width="300" height="300"></canvas>
+    
+    <div class="controls">
+        <button onclick="drawRect()">1. Rectángulo</button>
+        <button onclick="drawTriangle()">2. Triángulo</button>
+        <button onclick="drawHappyFace()">3. Cara Feliz</button>
+        <button onclick="drawLines()">4. Líneas</button>
+        <button onclick="drawArcs()">5. Arcos</button>
+        <button onclick="drawCurves()">6. Curvas</button>
+        <button onclick="drawCombination()">7. Combinación</button>
+    </div>
+
+    <!-- Archivo JavaScript principal -->
+    <script src="main.js"></script>
+</body>
+</html>
